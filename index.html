@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Blockchain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema BlockChain</h1>
+    </header>
+    
+    <div class="container">
+        <div class="transaction-box">
+            <h3>Criar uma nova transação <br> PORTA 5000</h3>
+            <input type="number" id="amount5000" placeholder="Valor">
+            <input type="text" id="sender5000" placeholder="De">
+            <input type="text" id="recipient5000" placeholder="Para">
+            <button onclick="createTransaction(5000)">Cadastrar</button>
+        </div>
+
+        <div class="transaction-box">
+            <h3>Criar uma nova transação <br> PORTA 5001</h3>
+            <input type="number" id="amount5001" placeholder="Valor">
+            <input type="text" id="sender5001" placeholder="De">
+            <input type="text" id="recipient5001" placeholder="Para">
+            <button onclick="createTransaction(5001)">Cadastrar</button>
+        </div>
+
+        <div class="transaction-box">
+            <h3>Criar uma nova transação <br> PORTA 5002</h3>
+            <input type="number" id="amount5002" placeholder="Valor">
+            <input type="text" id="sender5002" placeholder="De">
+            <input type="text" id="recipient5002" placeholder="Para">
+            <button onclick="createTransaction(5002)">Cadastrar</button>
+        </div>
+    </div>
+
+    <h3 class="chain-title">Blockchain</h3>
+    <div id="blockchain-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

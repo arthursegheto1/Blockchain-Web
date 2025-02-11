@@ -1,0 +1,26 @@
+REQUISIÇÕES POSTMAN:
+
+GET http://127.0.0.1:5000/mine
+
+POST http://127.0.0.1:5000/transactions/new
+
+raw json
+{
+    "sender": "Alice",
+    "recipient": "Bob",
+    "amount": 10
+}
+
+GET http://127.0.0.1:5000/chain
+
+POST http://127.0.0.1:5000/nodes/register
+
+raw json
+{
+  "nodes": [
+    "http://127.0.0.1:5001",
+    "http://127.0.0.1:5002"
+  ]
+}
+
+GET http://127.0.0.1:5000/nodes/resolve
